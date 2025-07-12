@@ -9,10 +9,10 @@ const Header = () => {
 
   const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'Programs', href: '/programs' },
+    { name: 'Classes', href: '/programs' },
     { name: 'About Us', href: '/about' },
     { name: 'Events', href: '/events' },
-    { name: 'Get Involved', href: '/get-involved' },
+    { name: 'Instructors', href: '/get-involved' },
     { name: 'Contact', href: '/contact' },
   ]
 
@@ -74,7 +74,7 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 animate-fade-in-left">
-            <span className="text-2xl font-bold text-red-500">The Opportunity League</span>
+            <span className="text-2xl font-bold text-red-500">Arte Flamenco</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -99,8 +99,8 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:block animate-fade-in-right">
-            <Link to="/get-involved#donationOptions" className="bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 text-lg hover:transform hover:scale-105 hover:shadow-lg">
-              Donate
+            <Link to="/contact" className="bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 text-lg hover:transform hover:scale-105 hover:shadow-lg">
+              Book Trial
             </Link>
           </div>
 
@@ -140,8 +140,8 @@ const Header = () => {
                 </Link>
               ))}
               <div className="px-4 pt-4 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-                <Link to="/get-involved#donation" className="bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 w-full text-center block text-lg hover:transform hover:scale-105">
-                  Donate
+                <Link to="/contact" className="bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 w-full text-center block text-lg hover:transform hover:scale-105">
+                  Book Trial
                 </Link>
               </div>
             </div>
